@@ -1,0 +1,34 @@
+import unittest
+
+class TestWarehouse(unittest.TestCase):
+
+def setUp(self):
+self.w = Warehouse()
+
+def test_add_item(self):
+self.w.add_item("apple", 10)
+self.assertEqual(self.w.query_stock("apple"), 10)
+
+def test_remove_item(self):
+self.w.add_item("A", 10)
+self.w.remove_item("A", 5)
+self.assertEqual(self.w.query_stock("A"), 5)
+
+def test_update_stock(self):
+self.w.add_item("A", 10)
+self.w.update_stock("A", 15)
+self.assertEqual(self.w.query_stock("A"), 15)
+
+def test_query_nonexistent_item(self):
+self.assertEqual(self.w.query_stock("B"), 0)
+
+def test_remove_nonexistent_item(self):
+with self.assertRaises(ValueError):
+self.w.remove_item("B", 1)
+
+def test_update_nonexistent_item(self):
+with self.assertRaises(ValueError):
+self.w.update_stock("B", 10)
+
+if __name__ == '__main__':
+unittest.main()
