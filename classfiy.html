@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8" />
+	<title>
+		分类
+	</title>
+	<meta name="viewport"
+		content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+			font-size: 14px;
+		}
+
+		body,
+		html {
+			width: 100%;
+			background: #fff;
+		}
+
+		h1 {
+
+			color: black;
+			text-align: center;
+			font-size: 30rem;
+			height: 40rem;
+		}
+
+		input {
+			background: #f0f0f0;
+			width: 620rem;
+			height: 80rem;
+			border: none;
+			outline: none;
+			margin: 40rem 25rem 20rem;
+			padding-left: 70rem;
+			border-radius: 50rem;
+			font-size: 30rem;
+		}
+
+		section {
+			width: 100%;
+			height: 1000rem;
+			display: flex;
+			background: #fff;
+		}
+
+		section figure {
+			width: 220rem;
+			height: 800rem;
+			display: flex;
+			flex-direction: column;
+		}
+
+		section figure figcaption {
+			width: 220rem;
+			height: 90rem;
+			color: black;
+			font-size: 35rem;
+			margin: 0rem 0 0 10rem;
+			background: white;
+			display: flex;
+			align-items: center;
+		}
+
+		section figure figcaption span {
+			width: 4px;
+			background: red;
+			height: 90rem;
+			border-radius: 4px;
+			position: absolute;
+		}
+
+		section figure figcaption p {
+			color: black;
+			font-size: 35rem;
+			padding: 20rem;
+		}
+
+		section aside article {
+			display: flex;
+			position: relative;
+			margin-bottom: 20rem;
+		}
+
+		section aside {
+			width: 520rem;
+			height: 1000rem;
+			display: flex;
+			flex-direction: column;
+			background: #f0f0f0;
+			padding: 20rem;
+			position: relative;
+			flex-wrap: nowrap;
+			overflow-x: hidden
+		}
+
+		section aside nav {
+			margin: 0 20rem;
+		}
+
+		section aside article .co {
+			width: 200rem;
+		}
+
+		section aside nav h1 {
+			font-size: 25rem;
+			text-align: left;
+			font-weight: 300;
+		}
+
+		section aside article .gwc {
+			width: 50rem;
+			position: absolute;
+			right: 20rem;
+			top: 60rem;
+		}
+
+		footer {
+			width: 730rem;
+			height: 110rem;
+			display: flex;
+			justify-content: space-around;
+			background: white;
+			padding: 10rem;
+			position: fixed;
+			bottom: 0;
+
+		}
+
+		footer nav,
+		footer aside {
+			width: 80rem;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			margin: 50rem 0;
+
+		}
+
+		footer nav p {
+			color: #333;
+			font-size: 30rem;
+			white-space: nowrap;
+		}
+
+		footer aside p {
+			color: black;
+			font-size: 30rem;
+			text-align: center;
+		}
+
+		footer img {
+			width: 60rem;
+		}
+
+		.kb {
+			width: 100%;
+			height: 150rem;
+		}
+
+		.head {
+			height: 200rem;
+			background-color: #fff;
+			position: fixed;
+			top: 0;
+			z-index: 9999;
+		}
+
+		.navtxt {
+			display: flex;
+			flex-direction: column;
+			justify-content: space-around;
+			white-space: nowrap;
+			overflow: hidden;
+			text-overflow: ellipsis;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="head">
+		<h1>分类</h1>
+		<input src="text" placeholder="请输入关键字" />
+	</div>
+
+	<div style="height: 200rem; background-color: #fff;"></div>
+	<section>
+
+		<figure id="titleLeft">
+			<!-- <figcaption> -->
+			<!-- <span style="display: block;"></span>
+				<p>上装</p>
+			</figcaption>
+			<figcaption>
+				<span style="display: none;"></span>
+				<p>裤装</p>
+			</figcaption>
+			<figcaption>
+				<span style="display: none;"></span>
+				<p>特价区</p>
+			</figcaption>
+			<figcaption>
+				<span style="display: none;"></span>
+				<p>裙装</p>
+			</figcaption>
+			<figcaption>
+				<span style="display: none;"></span>
+				<p>套装</p>
+			</figcaption>
+			<figcaption>
+				<span style="display: none;"></span>
+				<p>外套</p>
+			</figcaption>
+			<figcaption>
+				<span style="display: none;"></span>
+				<p>秒杀</p>
+			</figcaption>
+			<figcaption>
+				<span style="display: none;"></span>
+				<p>内裤</p>
+			</figcaption>
+			<figcaption>
+				<span style="display: none;"></span>
+				<p>袜子</p>
+			</figcaption>
+			<figcaption>
+				<span style="display: none;"></span>
+				<p>鞋</p>
+			</figcaption> -->
+		</figure>
+		<aside>
+			<!-- <article>
+				<img class="co" src="images/tuzi.jpg" />
+				<nav>
+					<h1>兔毛马甲</h1>
+					<h1>已售15</h1>
+					<h1>￥189</h1>
+				</nav>
+				<img class="gwc" src="images/nav/cart-on.png" />
+			</article>
+			<article>
+				<img class="co" src="images/tuzi.jpg" />
+				<nav>
+					<h1>兔毛马甲</h1>
+					<h1>已售15</h1>
+					<h1>￥189</h1>
+				</nav>
+				<img class="gwc" src="images/nav/cart-on.png" />
+			</article>
+			<article>
+				<img class="co" src="images/tuzi.jpg" />
+				<nav>
+					<h1>兔毛马甲</h1>
+					<h1>已售15</h1>
+					<h1>￥189</h1>
+				</nav>
+				<img class="gwc" src="images/nav/cart-on.png" />
+			</article>
+			<article>
+				<img class="co" src="images/tuzi.jpg" />
+				<nav>
+					<h1>兔毛马甲</h1>
+					<h1>已售15</h1>
+					<h1>￥189</h1>
+				</nav>
+				<img class="gwc" src="images/nav/cart-on.png" />
+			</article>
+			<article>
+				<img class="co" src="images/tuzi.jpg" />
+				<nav>
+					<h1>兔毛马甲</h1>
+					<h1>已售15</h1>
+					<h1>￥189</h1>
+				</nav>
+				<img class="gwc" src="images/nav/cart-on.png" />
+			</article> -->
+
+		</aside>
+	</section>
+
+	<footer>
+		<aside onclick="goIndex()">
+			<img class="footImg" src="images/nav/home-off.png" />
+			<p>首页</p>
+		</aside>
+		<nav onclick="goClassfiy()">
+			<img class="footImg" src="images/nav/fl-off.png" />
+			<p>分类</p>
+		</nav>
+		<nav onclick="goGood()">
+			<img class="footImg" src="images/nav/coupon-off.png" />
+			<p>优惠券</p>
+		</nav>
+		<nav onclick="goGwc()">
+			<img class="footImg" src="images/nav/cart-off.png" />
+			<p>购物车</p>
+		</nav>
+		<nav onclick="goMyInfo()">
+			<img class="footImg" src="images/nav/my-off.png" />
+			<p>我的</p>
+		</nav>
+
+	</footer>
+
+	<div class="kb">
+	</div>
+	<script>
+		var windowW = document.documentElement.clientWidth;
+		let rw = 750 / windowW;
+		document.documentElement.style.fontSize = 1 / rw + "px"
+	</script>
+	<script src="js/request.js"></script>
+
+
+	<script>
+
+		var arr = []
+		var cateId = 0
+		var key1 = Number(localStorage.getItem("selectedKey"))
+		var figure = document.querySelector("#titleLeft")
+		// 左标题
+		async function getTitleLeft() {
+			// GET  /{domain}/shop/goods/category/all
+			var data = {};
+			var res = await http.Request("get", "/shop/goods/category/all", false, data)
+			if (res.code == 0) {
+				result = res.data
+				console.log("12", result)
+				for (var i = 0; i < result.length; i++) {
+					var figcaption = document.createElement("figcaption")
+					figcaption.setAttribute("myId", result[i].id)
+					var cateId = figcaption.getAttribute("myId")
+					arr.push(cateId)
+					// console.log("cate",arr)
+
+					figcaption.innerHTML = `
+					<span style="display: none;"></span>
+					<p>${result[i].name}</p>
+					`
+					figure.appendChild(figcaption)
+					var figcaption = document.querySelectorAll("figcaption")
+					var span = document.querySelectorAll("span")
+
+				}
+				// 左边标题样式
+				clickLeftTitle(figcaption, span)
+				// 进页面初始化
+				console.log("cate", arr[key1])
+				productListFn(arr[key1])
+
+
+			}
+
+		}
+		getTitleLeft()
+
+		function clickLeftTitle(figcaption, span) {
+			// 从别的页面跳转过来
+			var key = Number(localStorage.getItem("selectedKey"))
+			if (key > 0) {
+				span[key].style.display = "block"
+				span[0].style.display = "none"
+			} else {
+				span[0].style.display = "block"
+			}
+			// 在分类页点击
+			for (var k = 0; k < figcaption.length; k++) {
+				// 点击figcaption 让key更新
+				figcaption[k].index = k
+				figcaption[k].onclick = function () {
+					cateId = arr[this.index]
+					// console.log("card",cateId)
+					asideInner.innerHTML = ""
+					localStorage.setItem("selectedKey", this.index)
+					var key = Number(localStorage.getItem("selectedKey"))
+					for (var i = 0; i <= 9; i++) {
+						if (key != i) {
+							// span[key].style.display = "block"
+							span[i].style.display = "none"
+							figcaption[i].style.background = "white"
+						} else {
+							span[key].style.display = "block"
+							figcaption[key].style.background = "#f5f5f5"
+
+						}
+
+					}
+
+					productListFn(cateId)
+
+
+
+				}
+			}
+		}
+
+		var myid = 0
+		var asideInner = document.querySelector("aside")
+		function productListFn(caId) {
+			var data = {
+				categoryId: caId
+			}
+			http.Request('post', "/shop/goods/list/v2", false, data)
+				.then(function (res) {
+					if (res.code == 0) {
+						console.log("312", res)
+						var result = res.data.result;
+						// console.log('list', result)
+
+						for (var i = 0; i < result.length; i++) {
+							var article = document.createElement("article");
+							article.setAttribute("myid", result[i].id)
+
+								article.innerHTML = `
+							<img class="co" src="${result[i].pic}" />
+								<nav class="navtxt">
+									<h1>${result[i].name}</h1>
+									<h1>已售${result[i].stores}</h1>
+									<h1>￥${result[i].minPrice}</h1>
+								</nav>
+							<img class="gwc" style="z-index: 9999;" src="images/nav/cart-on.png" />
+							`
+						
+
+
+
+							asideInner.appendChild(article)
+							article.onclick = function () {
+								var myid = this.getAttribute("myid")
+								// console.log("id", myid)
+								localStorage.setItem("myid", myid)
+								window.location.href = "detile.html?myid=" + myid + "&page=100"
+
+							}
+
+
+						}
+					}
+				})
+
+
+		}
+
+
+
+
+
+	</script>
+
+	<script>
+		function goIndex() {
+			window.location.href = "index1.html"
+		}
+		function goClassfiy() {
+			localStorage.removeItem("selectedKey")
+		}
+		function goGood() {
+			window.location.href = "good.html"
+		} function goGwc() {
+			window.location.href = "Gwc2.html"
+		} function goMyInfo() {
+			window.location.href = "Myinfo.html"
+		}
+	</script>
+</body>
+
+</html>
